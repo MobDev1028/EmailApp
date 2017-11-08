@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SFUIText-Medium.ttf">
+            <string>SFUIText-Medium</string>
+        </mutableArray>
+        <mutableArray key="SFUIText-Regular.ttf">
+            <string>SFUIText-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ManageAccountCell" rowHeight="121" id="KGk-i7-Jjw" customClass="ManangeAccountTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="MrH-8V-zqt">
+                        <rect key="frame" x="13" y="13" width="33" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="33" id="oTp-kk-hbT"/>
+                            <constraint firstAttribute="width" secondItem="MrH-8V-zqt" secondAttribute="height" multiplier="1:1" id="wir-Ku-v7i"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="16.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arla Dasilva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3Z-Pb-BiI">
+                        <rect key="frame" x="60" y="13" width="228" height="22"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="file_attach_arraow" translatesAutoresizingMaskIntoConstraints="NO" id="FEt-Jr-tGi">
+                        <rect key="frame" x="298" y="52" width="9" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="9" id="HtB-8l-7W9"/>
+                            <constraint firstAttribute="height" constant="17" id="MFp-6j-lta"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2h-70-XIT">
+                        <rect key="frame" x="60" y="119" width="260" height="1"/>
+                        <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="yRc-d5-Sna"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="arla_dasilva@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhO-1l-NId">
+                        <rect key="frame" x="60" y="35" width="228" height="18"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                        <color key="textColor" red="0.55294117649999996" green="0.55294117649999996" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="G2h-70-XIT" firstAttribute="leading" secondItem="XhO-1l-NId" secondAttribute="leading" id="30n-K4-dnP"/>
+                    <constraint firstItem="FEt-Jr-tGi" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="FA3-wN-GMb"/>
+                    <constraint firstAttribute="bottom" secondItem="G2h-70-XIT" secondAttribute="bottom" id="HGN-Od-ZEr"/>
+                    <constraint firstItem="FEt-Jr-tGi" firstAttribute="leading" secondItem="d3Z-Pb-BiI" secondAttribute="trailing" constant="10" id="KS2-k2-lhk"/>
+                    <constraint firstItem="XhO-1l-NId" firstAttribute="top" secondItem="d3Z-Pb-BiI" secondAttribute="bottom" id="RKZ-3K-tGp"/>
+                    <constraint firstItem="FEt-Jr-tGi" firstAttribute="leading" secondItem="XhO-1l-NId" secondAttribute="trailing" constant="10" id="VhP-7S-tkT"/>
+                    <constraint firstItem="XhO-1l-NId" firstAttribute="leading" secondItem="d3Z-Pb-BiI" secondAttribute="leading" id="Yz3-IU-UdH"/>
+                    <constraint firstAttribute="trailing" secondItem="G2h-70-XIT" secondAttribute="trailing" id="jCn-50-VFY"/>
+                    <constraint firstItem="MrH-8V-zqt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="mzT-nM-DE8"/>
+                    <constraint firstItem="d3Z-Pb-BiI" firstAttribute="leading" secondItem="MrH-8V-zqt" secondAttribute="trailing" constant="14" id="pxO-7v-6Oo"/>
+                    <constraint firstItem="MrH-8V-zqt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="t5u-7g-cG4"/>
+                    <constraint firstItem="d3Z-Pb-BiI" firstAttribute="top" secondItem="MrH-8V-zqt" secondAttribute="top" id="tW3-3v-8Q7"/>
+                    <constraint firstAttribute="trailing" secondItem="FEt-Jr-tGi" secondAttribute="trailing" constant="13" id="yfS-vl-lhl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgProfilePic" destination="MrH-8V-zqt" id="C5O-pq-NvY"/>
+                <outlet property="lblMail" destination="XhO-1l-NId" id="vhe-lG-vVq"/>
+                <outlet property="lblName" destination="d3Z-Pb-BiI" id="lbg-tP-FCh"/>
+                <outlet property="sepView" destination="G2h-70-XIT" id="yBd-lH-Of8"/>
+            </connections>
+            <point key="canvasLocation" x="363" y="317.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="file_attach_arraow" width="6" height="12"/>
+        <image name="profile_image_placeholder" width="100" height="100"/>
+    </resources>
+</document>

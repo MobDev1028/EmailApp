@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignupViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signup_bg" translatesAutoresizingMaskIntoConstraints="NO" id="YIz-Kt-93u">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simple_email_logo_big" translatesAutoresizingMaskIntoConstraints="NO" id="QzC-GA-y1a">
+                    <rect key="frame" x="0.0" y="137" width="375" height="193"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="QzC-GA-y1a" secondAttribute="height" multiplier="750:386" id="lOz-eR-Qri"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZD-qn-jmo">
+                    <rect key="frame" x="27" y="507.5" width="321" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="NZD-qn-jmo" secondAttribute="height" multiplier="107:15" id="Dl5-Eb-HGd"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="btn_signup"/>
+                    <connections>
+                        <action selector="signInGmailAction:" destination="-1" eventType="touchUpInside" id="sI7-86-c97"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2v-s3-5Y5">
+                    <rect key="frame" x="117" y="590.5" width="142" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="W2v-s3-5Y5" secondAttribute="height" multiplier="139:20" id="qIW-cW-EC1"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="btn_signin"/>
+                    <connections>
+                        <action selector="signUpAction:" destination="-1" eventType="touchUpInside" id="Axy-sR-aLN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QzC-GA-y1a" firstAttribute="centerX" secondItem="YIz-Kt-93u" secondAttribute="centerX" id="3ZQ-vu-zUO"/>
+                <constraint firstItem="QzC-GA-y1a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AvF-q2-sYr"/>
+                <constraint firstAttribute="trailing" secondItem="QzC-GA-y1a" secondAttribute="trailing" id="C1M-2q-nlO"/>
+                <constraint firstAttribute="bottom" secondItem="YIz-Kt-93u" secondAttribute="bottom" id="DyC-U8-5iW"/>
+                <constraint firstAttribute="trailing" secondItem="NZD-qn-jmo" secondAttribute="trailing" constant="27" id="Htd-vj-eCW"/>
+                <constraint firstItem="QzC-GA-y1a" firstAttribute="centerY" secondItem="YIz-Kt-93u" secondAttribute="centerY" multiplier="0.7" id="PIE-7C-Lar"/>
+                <constraint firstItem="W2v-s3-5Y5" firstAttribute="top" secondItem="NZD-qn-jmo" secondAttribute="bottom" constant="38" id="QXM-9Z-6r6"/>
+                <constraint firstAttribute="bottom" secondItem="W2v-s3-5Y5" secondAttribute="bottom" constant="56" id="Qyg-HG-a9E"/>
+                <constraint firstItem="W2v-s3-5Y5" firstAttribute="centerX" secondItem="NZD-qn-jmo" secondAttribute="centerX" id="cLI-zr-Ynf"/>
+                <constraint firstItem="NZD-qn-jmo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="27" id="ceq-cI-BUV"/>
+                <constraint firstAttribute="trailing" secondItem="YIz-Kt-93u" secondAttribute="trailing" id="dro-Up-Izu"/>
+                <constraint firstItem="YIz-Kt-93u" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nEi-jC-hoo"/>
+                <constraint firstItem="YIz-Kt-93u" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ur6-6n-tVV"/>
+                <constraint firstItem="W2v-s3-5Y5" firstAttribute="width" secondItem="NZD-qn-jmo" secondAttribute="width" multiplier="0.44" id="wcE-oe-y0l"/>
+            </constraints>
+            <point key="canvasLocation" x="403.5" y="154.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_signin" width="139" height="20"/>
+        <image name="btn_signup" width="321" height="45"/>
+        <image name="signup_bg" width="375" height="667"/>
+        <image name="simple_email_logo_big" width="375" height="193"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

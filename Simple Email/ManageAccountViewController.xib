@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIText-Medium.ttf">
+            <string>SFUIText-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ManageAccountViewController">
+            <connections>
+                <outlet property="btnAddAccount" destination="yTo-IU-p8d" id="U1M-Oe-Ep8"/>
+                <outlet property="manageAccountTabkeView" destination="NuM-Sz-E5Y" id="pmG-eq-Cwb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NuM-Sz-E5Y">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="541"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="5Kc-Wf-PQZ"/>
+                        <outlet property="delegate" destination="-1" id="Ozp-gp-Hjw"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTo-IU-p8d">
+                    <rect key="frame" x="13" y="584" width="349" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="yTo-IU-p8d" secondAttribute="height" multiplier="349:40" id="0mu-Xp-xtB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="18"/>
+                    <state key="normal" title="Add Account" backgroundImage="btn_blue"/>
+                    <connections>
+                        <action selector="btnAddAccount:" destination="-1" eventType="touchUpInside" id="HWE-OU-F5N"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LqI-z8-biL">
+                    <rect key="frame" x="0.0" y="541" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="kNX-f7-3WV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NuM-Sz-E5Y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="16x-XU-AoA"/>
+                <constraint firstItem="yTo-IU-p8d" firstAttribute="top" secondItem="NuM-Sz-E5Y" secondAttribute="bottom" constant="43" id="D1K-Y2-pts"/>
+                <constraint firstItem="NuM-Sz-E5Y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QOs-DK-KsQ"/>
+                <constraint firstItem="yTo-IU-p8d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="aU3-I8-bvT"/>
+                <constraint firstItem="LqI-z8-biL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="asv-Ii-Rna"/>
+                <constraint firstAttribute="trailing" secondItem="LqI-z8-biL" secondAttribute="trailing" id="etA-u1-6Cu"/>
+                <constraint firstAttribute="trailing" secondItem="yTo-IU-p8d" secondAttribute="trailing" constant="13" id="iwf-7l-M7c"/>
+                <constraint firstItem="LqI-z8-biL" firstAttribute="top" secondItem="NuM-Sz-E5Y" secondAttribute="bottom" id="oQs-Nm-Jp4"/>
+                <constraint firstAttribute="bottom" secondItem="yTo-IU-p8d" secondAttribute="bottom" constant="43" id="tgK-Aj-WjC"/>
+                <constraint firstAttribute="trailing" secondItem="NuM-Sz-E5Y" secondAttribute="trailing" id="zmf-tp-q6b"/>
+            </constraints>
+            <point key="canvasLocation" x="366.5" y="244.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_blue" width="348" height="40"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

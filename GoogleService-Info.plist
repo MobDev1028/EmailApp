@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TRACKING_ID</key>
+	<string>UA-102318986-1</string>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>662252151929-nevnqvhaqs8fole6a5f9l5m81dm5nb91.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.662252151929-nevnqvhaqs8fole6a5f9l5m81dm5nb91</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCIjnzDOYswHKySerDzf8gsh8lo4-btBPs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>662252151929</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.simplemail.simplemail</string>
+	<key>PROJECT_ID</key>
+	<string>simpleemail-13b1e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>simpleemail-13b1e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:662252151929:ios:4533c120ae650010</string>
+	<key>DATABASE_URL</key>
+	<string>https://simpleemail-13b1e.firebaseio.com</string>
+</dict>
+</plist>

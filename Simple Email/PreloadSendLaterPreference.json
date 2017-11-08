@@ -1,0 +1,70 @@
+[
+ {
+ "preferenceId":1,
+ "isPreferenceActive": true,
+ "sendDate": 0,
+ "sendHourCount": 1,
+ "sendMinuteCount": 0,
+ "timePeriod" :"",
+ "sendLaterTitle": "One hour from now",
+ "timeString": "+1 Hour",
+ "isDefault":true
+ },
+ {
+  "preferenceId":2,
+ "isPreferenceActive": true,
+ "sendDate": 0,
+ "sendHourCount": 8,
+ "sendMinuteCount": 0,
+  "timePeriod" :"AM",
+ "sendLaterTitle": "Tomorrow at 8 AM",
+  "timeString": "8:00 AM",
+ "isDefault":true
+ },
+ {
+  "preferenceId":3,
+ "isPreferenceActive": true,
+ "sendDate": 0,
+ "sendHourCount": 8,
+ "sendMinuteCount": 0,
+   "timePeriod" :"AM",
+ "sendLaterTitle": "Next monday at 8 AM",
+  "timeString": "8:00 AM",
+  "isDefault":true
+ },
+ {
+  "preferenceId":4,
+ "isPreferenceActive": true,
+ "sendDate": 0,
+ "sendHourCount": 8,
+ "sendMinuteCount": 0,
+    "timePeriod" :"PM",
+ "sendLaterTitle": "In one week",
+ "timeString": "8:00 PM",
+ "isDefault":true
+ }
+ ,
+ {
+  "preferenceId":5,
+ "isPreferenceActive": true,
+ "sendDate": 0,
+ "sendHourCount": 8,
+ "sendMinuteCount": 0,
+    "timePeriod" :"AM",
+ "sendLaterTitle": "In 3 days",
+  "timeString": "8:00 AM",
+  "isDefault":true
+ }
+ ,
+ {
+ "preferenceId":6,
+ "isPreferenceActive": true,
+ "sendDate": 0,
+ "sendHourCount": 0,
+ "sendMinuteCount": 1,
+    "timePeriod" :"AM",
+ "sendLaterTitle": "Pick Date & Time",
+  "timeString": "",
+ "isDefault":true
+ }
+ ]

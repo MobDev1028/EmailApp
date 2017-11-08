@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIText-Medium.ttf">
+            <string>SFUIText-Medium</string>
+        </array>
+        <array key="SFUIText-Regular.ttf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddAccountFormViewController">
+            <connections>
+                <outlet property="txtEmail" destination="Ywj-S6-GRc" id="hqm-0F-RgU"/>
+                <outlet property="txtPassword" destination="ZOx-RQ-U0E" id="91g-Oi-fvX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please complete Email and Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Emh-Zc-3eb">
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="18"/>
+                    <color key="textColor" red="0.55294117649999996" green="0.55294117649999996" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="composer_from_bg" translatesAutoresizingMaskIntoConstraints="NO" id="L9Q-Tb-o7z"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ywj-S6-GRc">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="hTD-UQ-UxB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="l1b-Md-xtd"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="composer_from_bg" translatesAutoresizingMaskIntoConstraints="NO" id="bXZ-lc-uhJ"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZOx-RQ-U0E">
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="RSH-xW-Xbq"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h58-5U-Ggr">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="h58-5U-Ggr" secondAttribute="height" multiplier="349:40" id="Nfd-u5-9cl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="18"/>
+                    <state key="normal" title="Add Account" backgroundImage="btn_blue">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="L9Q-Tb-o7z" firstAttribute="height" secondItem="Ywj-S6-GRc" secondAttribute="height" id="3kF-UN-bdX"/>
+                <constraint firstItem="h58-5U-Ggr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="6Dn-Fz-8uW"/>
+                <constraint firstItem="bXZ-lc-uhJ" firstAttribute="top" secondItem="Ywj-S6-GRc" secondAttribute="bottom" constant="19" id="BQH-By-wGT"/>
+                <constraint firstItem="bXZ-lc-uhJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="Bl9-xL-68o"/>
+                <constraint firstItem="L9Q-Tb-o7z" firstAttribute="centerY" secondItem="Ywj-S6-GRc" secondAttribute="centerY" id="IMB-Nu-LR2"/>
+                <constraint firstAttribute="trailing" secondItem="L9Q-Tb-o7z" secondAttribute="trailing" constant="12" id="LX8-H5-Gfk"/>
+                <constraint firstItem="ZOx-RQ-U0E" firstAttribute="height" secondItem="Ywj-S6-GRc" secondAttribute="height" id="PAk-cx-PeE"/>
+                <constraint firstItem="ZOx-RQ-U0E" firstAttribute="width" secondItem="Ywj-S6-GRc" secondAttribute="width" id="RQn-wV-mwR"/>
+                <constraint firstItem="h58-5U-Ggr" firstAttribute="top" secondItem="ZOx-RQ-U0E" secondAttribute="bottom" constant="43" id="UNe-nA-dQv"/>
+                <constraint firstItem="ZOx-RQ-U0E" firstAttribute="centerY" secondItem="bXZ-lc-uhJ" secondAttribute="centerY" id="VdK-Df-KOa"/>
+                <constraint firstAttribute="trailing" secondItem="h58-5U-Ggr" secondAttribute="trailing" constant="13" id="YbN-Iy-6Rz"/>
+                <constraint firstAttribute="trailing" secondItem="bXZ-lc-uhJ" secondAttribute="trailing" constant="12" id="ZkY-3Q-5zW"/>
+                <constraint firstAttribute="trailing" secondItem="Emh-Zc-3eb" secondAttribute="trailing" constant="15" id="dhV-tF-Wkn"/>
+                <constraint firstItem="Ywj-S6-GRc" firstAttribute="top" secondItem="Emh-Zc-3eb" secondAttribute="bottom" constant="20" id="g42-1r-GfW"/>
+                <constraint firstItem="Ywj-S6-GRc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="29" id="o3c-Z8-h3U"/>
+                <constraint firstItem="ZOx-RQ-U0E" firstAttribute="trailing" secondItem="Ywj-S6-GRc" secondAttribute="trailing" id="rOU-T4-kyb"/>
+                <constraint firstAttribute="trailing" secondItem="Ywj-S6-GRc" secondAttribute="trailing" constant="12" id="rr3-O5-byb"/>
+                <constraint firstItem="Emh-Zc-3eb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="sSP-9n-Eo5"/>
+                <constraint firstItem="bXZ-lc-uhJ" firstAttribute="height" secondItem="L9Q-Tb-o7z" secondAttribute="height" id="x9g-Df-osb"/>
+                <constraint firstItem="L9Q-Tb-o7z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="xSG-wA-zvy"/>
+                <constraint firstItem="Emh-Zc-3eb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="53" id="ztj-kB-3dd"/>
+            </constraints>
+            <point key="canvasLocation" x="366.5" y="241.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_blue" width="348" height="40"/>
+        <image name="composer_from_bg" width="286" height="28"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

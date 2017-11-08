@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MailThreadViewController">
+            <connections>
+                <outlet property="btnArchive" destination="fKm-x7-gaU" id="aOQ-0H-YKH"/>
+                <outlet property="btnMore" destination="exr-bV-GAW" id="gXi-JJ-Oeq"/>
+                <outlet property="btnReply" destination="YFj-ab-ITN" id="5N3-F9-R76"/>
+                <outlet property="btnTrash" destination="UTA-GN-X9v" id="dH2-Ee-Csh"/>
+                <outlet property="contraintLeading" destination="B8t-an-uT0" id="lnU-VP-40V"/>
+                <outlet property="contraintTableLeading" destination="LdA-TW-k64" id="bba-KC-P5z"/>
+                <outlet property="contraintTableTop" destination="eWt-77-3Zh" id="LOm-Gb-HyA"/>
+                <outlet property="contraintTableTrailing" destination="YR7-8i-8iu" id="TiU-eB-prM"/>
+                <outlet property="contraintTrailing" destination="Pod-Ss-YvT" id="tgk-QE-0jW"/>
+                <outlet property="threadTableView" destination="7nK-UH-YBx" id="s0c-4H-uxo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom_blur" translatesAutoresizingMaskIntoConstraints="NO" id="A6E-Os-X3U">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="A6E-Os-X3U" secondAttribute="height" multiplier="375:44" id="RqW-3P-TQv"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7nK-UH-YBx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="hhp-7t-TiN"/>
+                        <outlet property="delegate" destination="-1" id="1Cq-yd-m1g"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xiq-fN-X1a" userLabel="BottomOptions">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFj-ab-ITN">
+                            <rect key="frame" x="62.5" y="0.0" width="62.5" height="44"/>
+                            <state key="normal" image="btn_blur_reply"/>
+                            <connections>
+                                <action selector="btnReplyAction:" destination="-1" eventType="touchUpInside" id="q5e-09-cFd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKm-x7-gaU">
+                            <rect key="frame" x="125" y="0.0" width="62.5" height="44"/>
+                            <state key="normal" image="btn_blur_archive"/>
+                            <connections>
+                                <action selector="btnArchiveAction:" destination="-1" eventType="touchUpInside" id="TXH-Mw-Can"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTA-GN-X9v">
+                            <rect key="frame" x="187.5" y="0.0" width="62.5" height="44"/>
+                            <state key="normal" image="btn_blur_delete"/>
+                            <connections>
+                                <action selector="btnDeleteAction:" destination="-1" eventType="touchUpInside" id="E3i-EN-6ap"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7t-qy-AZx">
+                            <rect key="frame" x="250" y="0.0" width="62.5" height="44"/>
+                            <state key="normal" image="forward_arrow"/>
+                            <connections>
+                                <action selector="btnForwardAction:" destination="-1" eventType="touchUpInside" id="1SS-tS-8L0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1d4-KW-NYe">
+                            <rect key="frame" x="0.0" y="0.0" width="62.5" height="44"/>
+                            <state key="normal" image="btn_blur_favorite"/>
+                            <connections>
+                                <action selector="btnFavoriteAction:" destination="-1" eventType="touchUpInside" id="4Ob-Qy-6bD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exr-bV-GAW">
+                            <rect key="frame" x="312.5" y="0.0" width="62.5" height="44"/>
+                            <state key="normal" image="btn_blur_upload"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="O7t-qy-AZx" secondAttribute="bottom" id="01f-JN-Tap"/>
+                        <constraint firstItem="O7t-qy-AZx" firstAttribute="top" secondItem="xiq-fN-X1a" secondAttribute="top" id="25V-Yu-Ug1"/>
+                        <constraint firstItem="O7t-qy-AZx" firstAttribute="width" secondItem="1d4-KW-NYe" secondAttribute="width" id="2K3-ZP-nqN"/>
+                        <constraint firstItem="exr-bV-GAW" firstAttribute="width" secondItem="O7t-qy-AZx" secondAttribute="width" id="2fk-xx-FMs"/>
+                        <constraint firstItem="YFj-ab-ITN" firstAttribute="width" secondItem="1d4-KW-NYe" secondAttribute="width" id="34m-pP-bAu"/>
+                        <constraint firstAttribute="bottom" secondItem="exr-bV-GAW" secondAttribute="bottom" id="3a7-fU-Fgh"/>
+                        <constraint firstItem="YFj-ab-ITN" firstAttribute="top" secondItem="xiq-fN-X1a" secondAttribute="top" id="6EK-Nj-PtD"/>
+                        <constraint firstAttribute="bottom" secondItem="1d4-KW-NYe" secondAttribute="bottom" id="6Hw-y6-HKR"/>
+                        <constraint firstAttribute="trailing" secondItem="exr-bV-GAW" secondAttribute="trailing" id="8Td-IV-KUF"/>
+                        <constraint firstItem="UTA-GN-X9v" firstAttribute="leading" secondItem="fKm-x7-gaU" secondAttribute="trailing" id="B8t-an-uT0"/>
+                        <constraint firstItem="UTA-GN-X9v" firstAttribute="width" secondItem="1d4-KW-NYe" secondAttribute="width" id="BQg-CG-5QH"/>
+                        <constraint firstAttribute="bottom" secondItem="UTA-GN-X9v" secondAttribute="bottom" id="DSu-p3-yJD"/>
+                        <constraint firstItem="fKm-x7-gaU" firstAttribute="width" secondItem="1d4-KW-NYe" secondAttribute="width" id="Edi-AT-II5"/>
+                        <constraint firstAttribute="bottom" secondItem="YFj-ab-ITN" secondAttribute="bottom" id="Fx9-AO-zXO"/>
+                        <constraint firstItem="O7t-qy-AZx" firstAttribute="leading" secondItem="UTA-GN-X9v" secondAttribute="trailing" id="KX1-bh-hYs"/>
+                        <constraint firstItem="exr-bV-GAW" firstAttribute="leading" secondItem="O7t-qy-AZx" secondAttribute="trailing" id="ONs-Xs-JG3"/>
+                        <constraint firstItem="fKm-x7-gaU" firstAttribute="leading" secondItem="YFj-ab-ITN" secondAttribute="trailing" id="Pod-Ss-YvT"/>
+                        <constraint firstItem="fKm-x7-gaU" firstAttribute="top" secondItem="xiq-fN-X1a" secondAttribute="top" id="Y2i-zX-tcZ"/>
+                        <constraint firstItem="1d4-KW-NYe" firstAttribute="leading" secondItem="xiq-fN-X1a" secondAttribute="leading" id="YTi-No-RWV"/>
+                        <constraint firstItem="exr-bV-GAW" firstAttribute="top" secondItem="xiq-fN-X1a" secondAttribute="top" id="auO-UC-jq7"/>
+                        <constraint firstItem="1d4-KW-NYe" firstAttribute="top" secondItem="xiq-fN-X1a" secondAttribute="top" id="hLc-LU-kZP"/>
+                        <constraint firstItem="fKm-x7-gaU" firstAttribute="height" secondItem="1d4-KW-NYe" secondAttribute="height" id="hjn-CU-hRe"/>
+                        <constraint firstItem="UTA-GN-X9v" firstAttribute="top" secondItem="xiq-fN-X1a" secondAttribute="top" id="kfY-Zh-8t7"/>
+                        <constraint firstItem="UTA-GN-X9v" firstAttribute="height" secondItem="1d4-KW-NYe" secondAttribute="height" id="nG4-hh-u3S"/>
+                        <constraint firstAttribute="bottom" secondItem="fKm-x7-gaU" secondAttribute="bottom" id="p85-8D-jJY"/>
+                        <constraint firstItem="YFj-ab-ITN" firstAttribute="leading" secondItem="1d4-KW-NYe" secondAttribute="trailing" id="qdS-EJ-YRh"/>
+                        <constraint firstItem="O7t-qy-AZx" firstAttribute="height" secondItem="1d4-KW-NYe" secondAttribute="height" id="rap-b1-EIJ"/>
+                        <constraint firstItem="YFj-ab-ITN" firstAttribute="height" secondItem="1d4-KW-NYe" secondAttribute="height" id="vYd-T9-fNU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xiq-fN-X1a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CvP-Er-QRn"/>
+                <constraint firstItem="A6E-Os-X3U" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DGs-j6-CD8"/>
+                <constraint firstAttribute="bottom" secondItem="xiq-fN-X1a" secondAttribute="bottom" id="DOI-Jf-EAD"/>
+                <constraint firstItem="7nK-UH-YBx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LdA-TW-k64"/>
+                <constraint firstAttribute="bottom" secondItem="A6E-Os-X3U" secondAttribute="bottom" id="Q2I-Ch-vIi"/>
+                <constraint firstItem="xiq-fN-X1a" firstAttribute="height" secondItem="A6E-Os-X3U" secondAttribute="height" id="QBG-C5-FVc"/>
+                <constraint firstAttribute="trailing" secondItem="xiq-fN-X1a" secondAttribute="trailing" id="U27-aG-bUZ"/>
+                <constraint firstAttribute="trailing" secondItem="7nK-UH-YBx" secondAttribute="trailing" id="YR7-8i-8iu"/>
+                <constraint firstItem="7nK-UH-YBx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eWt-77-3Zh"/>
+                <constraint firstAttribute="trailing" secondItem="A6E-Os-X3U" secondAttribute="trailing" id="qX4-TF-z5H"/>
+                <constraint firstItem="xiq-fN-X1a" firstAttribute="top" secondItem="7nK-UH-YBx" secondAttribute="bottom" id="vYo-S4-jh5"/>
+            </constraints>
+            <point key="canvasLocation" x="386.5" y="334.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bottom_blur" width="375" height="44"/>
+        <image name="btn_blur_archive" width="20" height="18"/>
+        <image name="btn_blur_delete" width="19" height="25"/>
+        <image name="btn_blur_favorite" width="22" height="22"/>
+        <image name="btn_blur_reply" width="26" height="19"/>
+        <image name="btn_blur_upload" width="18" height="24"/>
+        <image name="forward_arrow" width="25" height="25"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

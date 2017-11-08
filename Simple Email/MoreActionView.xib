@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIText-Semibold.ttf">
+            <string>SFUIText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoreActionView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="MoreActionView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRl-NW-HJO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <connections>
+                        <action selector="btnHideView:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="ikM-7r-6aW"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfs-En-Wjo">
+                    <rect key="frame" x="30" y="10" width="315" height="263"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7u-i9-S6w" userLabel="MessageMoreView">
+                            <rect key="frame" x="0.0" y="0.0" width="315" height="263"/>
+                            <subviews>
+                                <button opaque="NO" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwK-7G-Tm9">
+                                    <rect key="frame" x="20" y="20" width="78.5" height="78.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="bwK-7G-Tm9" secondAttribute="height" multiplier="1:1" id="Ywv-nX-3XO"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="13"/>
+                                    <state key="normal" title="Reply">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnActions:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="Cux-2U-un6"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="202" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXK-qj-iWx">
+                                    <rect key="frame" x="118.5" y="20" width="78" height="78.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="rXK-qj-iWx" secondAttribute="height" multiplier="1:1" id="UKg-RK-8jw"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="13"/>
+                                    <state key="normal" title="Forward">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnActions:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="sW6-vf-GdJ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="203" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zkC-NT-26c">
+                                    <rect key="frame" x="216.5" y="20" width="78.5" height="78.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="zkC-NT-26c" secondAttribute="height" multiplier="1:1" id="x0u-tB-TSW"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="13"/>
+                                    <state key="normal" title="Print">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnActions:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="dxu-bp-xcB"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="204" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1sz-bG-Zu6">
+                                    <rect key="frame" x="20" y="118.5" width="78.5" height="78"/>
+                                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="13"/>
+                                    <state key="normal" title="Delete">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnActions:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="PtO-XN-LfQ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBY-uL-clM">
+                                    <rect key="frame" x="0.0" y="233" width="315" height="30"/>
+                                    <color key="backgroundColor" red="0.94117647059999998" green="0.94901960780000005" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="dyR-qC-cAf"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="14"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnHideView:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="YfY-XR-wb0"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19a-ic-tV2">
+                                    <rect key="frame" x="0.0" y="232" width="315" height="1"/>
+                                    <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="wEV-MP-KU7"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="rXK-qj-iWx" firstAttribute="width" secondItem="bwK-7G-Tm9" secondAttribute="width" id="4Vy-1f-UJ6"/>
+                                <constraint firstAttribute="trailing" secondItem="zkC-NT-26c" secondAttribute="trailing" constant="20" id="7VD-c6-sz1"/>
+                                <constraint firstItem="1sz-bG-Zu6" firstAttribute="height" secondItem="bwK-7G-Tm9" secondAttribute="height" id="997-aF-uvm"/>
+                                <constraint firstAttribute="trailing" secondItem="vBY-uL-clM" secondAttribute="trailing" id="9sI-Ge-m7p"/>
+                                <constraint firstItem="zkC-NT-26c" firstAttribute="leading" secondItem="rXK-qj-iWx" secondAttribute="trailing" constant="20" id="A0v-Sd-h6D"/>
+                                <constraint firstItem="vBY-uL-clM" firstAttribute="leading" secondItem="t7u-i9-S6w" secondAttribute="leading" id="DiU-lq-r3S"/>
+                                <constraint firstAttribute="trailing" secondItem="19a-ic-tV2" secondAttribute="trailing" id="Fgm-d3-chL"/>
+                                <constraint firstItem="bwK-7G-Tm9" firstAttribute="top" secondItem="t7u-i9-S6w" secondAttribute="top" constant="20" id="Rj6-ii-b5N"/>
+                                <constraint firstItem="zkC-NT-26c" firstAttribute="width" secondItem="bwK-7G-Tm9" secondAttribute="width" id="SmU-Gh-uJe"/>
+                                <constraint firstItem="zkC-NT-26c" firstAttribute="top" secondItem="t7u-i9-S6w" secondAttribute="top" constant="20" id="TZ6-LS-RuL"/>
+                                <constraint firstItem="1sz-bG-Zu6" firstAttribute="leading" secondItem="t7u-i9-S6w" secondAttribute="leading" constant="20" id="UUF-42-NDw"/>
+                                <constraint firstItem="vBY-uL-clM" firstAttribute="top" secondItem="19a-ic-tV2" secondAttribute="bottom" id="b7e-5G-GeR"/>
+                                <constraint firstItem="bwK-7G-Tm9" firstAttribute="leading" secondItem="t7u-i9-S6w" secondAttribute="leading" constant="20" id="bYi-Uh-NlM"/>
+                                <constraint firstItem="rXK-qj-iWx" firstAttribute="top" secondItem="t7u-i9-S6w" secondAttribute="top" constant="20" id="hEy-G5-pq6"/>
+                                <constraint firstItem="19a-ic-tV2" firstAttribute="leading" secondItem="t7u-i9-S6w" secondAttribute="leading" id="oTM-MP-KX1"/>
+                                <constraint firstItem="1sz-bG-Zu6" firstAttribute="width" secondItem="bwK-7G-Tm9" secondAttribute="width" id="orZ-s3-foQ"/>
+                                <constraint firstItem="1sz-bG-Zu6" firstAttribute="top" secondItem="bwK-7G-Tm9" secondAttribute="bottom" constant="20" id="qoU-QD-a4z"/>
+                                <constraint firstItem="rXK-qj-iWx" firstAttribute="leading" secondItem="bwK-7G-Tm9" secondAttribute="trailing" constant="20" id="uOZ-cr-dA4"/>
+                                <constraint firstAttribute="bottom" secondItem="vBY-uL-clM" secondAttribute="bottom" id="yTk-5H-bZc"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pq0-o0-h3H" userLabel="ThreadMoreView">
+                            <rect key="frame" x="0.0" y="0.0" width="315" height="263"/>
+                            <subviews>
+                                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFR-xI-rR0">
+                                    <rect key="frame" x="20" y="20" width="78.5" height="78.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="ZFR-xI-rR0" secondAttribute="height" multiplier="1:1" id="hnV-kz-onA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="13"/>
+                                    <state key="normal" title="Move">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnActions:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="XIv-I9-naE"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbl-EO-HgA">
+                                    <rect key="frame" x="118.5" y="20" width="78" height="78.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="hbl-EO-HgA" secondAttribute="height" multiplier="1:1" id="ON8-tp-Hw0"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="13"/>
+                                    <state key="normal" title="Delete">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnActions:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="KtN-Zz-Dlg"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="c7x-sY-zkR">
+                                    <rect key="frame" x="216.5" y="20" width="78.5" height="78.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="c7x-sY-zkR" secondAttribute="height" multiplier="1:1" id="vjc-sz-Qdp"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="13"/>
+                                    <state key="normal" title="Print">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnActions:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="JLy-Xg-BmY"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5bk-Xx-rSC">
+                                    <rect key="frame" x="20" y="118.5" width="78.5" height="78"/>
+                                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="13"/>
+                                    <state key="normal" title="Mark Spam">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnActions:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="moR-HT-VaS"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5r-Fe-3uD">
+                                    <rect key="frame" x="0.0" y="233" width="315" height="30"/>
+                                    <color key="backgroundColor" red="0.94117647059999998" green="0.94901960780000005" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="j0Z-sW-q9b"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="14"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnHideView:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="g4W-nX-8dw"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bg8-bC-Rt0">
+                                    <rect key="frame" x="0.0" y="232" width="315" height="1"/>
+                                    <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="alm-vd-VGf"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="c7x-sY-zkR" secondAttribute="trailing" constant="20" id="0Rl-EU-mOa"/>
+                                <constraint firstAttribute="bottom" secondItem="O5r-Fe-3uD" secondAttribute="bottom" id="2rN-X4-KL1"/>
+                                <constraint firstItem="c7x-sY-zkR" firstAttribute="leading" secondItem="hbl-EO-HgA" secondAttribute="trailing" constant="20" id="737-dd-0AX"/>
+                                <constraint firstItem="5bk-Xx-rSC" firstAttribute="leading" secondItem="Pq0-o0-h3H" secondAttribute="leading" constant="20" id="7lF-ys-2Ep"/>
+                                <constraint firstAttribute="trailing" secondItem="bg8-bC-Rt0" secondAttribute="trailing" id="EYZ-Ju-YGs"/>
+                                <constraint firstItem="5bk-Xx-rSC" firstAttribute="width" secondItem="ZFR-xI-rR0" secondAttribute="width" id="FG5-Vl-rHc"/>
+                                <constraint firstItem="O5r-Fe-3uD" firstAttribute="top" secondItem="bg8-bC-Rt0" secondAttribute="bottom" id="IxE-As-nMq"/>
+                                <constraint firstItem="c7x-sY-zkR" firstAttribute="width" secondItem="ZFR-xI-rR0" secondAttribute="width" id="KoO-X6-VrG"/>
+                                <constraint firstItem="5bk-Xx-rSC" firstAttribute="top" secondItem="ZFR-xI-rR0" secondAttribute="bottom" constant="20" id="OnB-8c-o3V"/>
+                                <constraint firstItem="5bk-Xx-rSC" firstAttribute="height" secondItem="ZFR-xI-rR0" secondAttribute="height" id="Ulv-w4-Tk1"/>
+                                <constraint firstItem="hbl-EO-HgA" firstAttribute="width" secondItem="ZFR-xI-rR0" secondAttribute="width" id="aYS-qG-SE2"/>
+                                <constraint firstItem="bg8-bC-Rt0" firstAttribute="leading" secondItem="Pq0-o0-h3H" secondAttribute="leading" id="aZj-Nb-nry"/>
+                                <constraint firstItem="hbl-EO-HgA" firstAttribute="leading" secondItem="ZFR-xI-rR0" secondAttribute="trailing" constant="20" id="bNd-ex-q0T"/>
+                                <constraint firstItem="c7x-sY-zkR" firstAttribute="top" secondItem="Pq0-o0-h3H" secondAttribute="top" constant="20" id="cMO-0a-yr3"/>
+                                <constraint firstItem="hbl-EO-HgA" firstAttribute="top" secondItem="Pq0-o0-h3H" secondAttribute="top" constant="20" id="epN-nN-u4q"/>
+                                <constraint firstItem="ZFR-xI-rR0" firstAttribute="top" secondItem="Pq0-o0-h3H" secondAttribute="top" constant="20" id="lQI-W3-ax8"/>
+                                <constraint firstItem="O5r-Fe-3uD" firstAttribute="leading" secondItem="Pq0-o0-h3H" secondAttribute="leading" id="lh0-1Y-Ora"/>
+                                <constraint firstItem="ZFR-xI-rR0" firstAttribute="leading" secondItem="Pq0-o0-h3H" secondAttribute="leading" constant="20" id="ojl-F9-B24"/>
+                                <constraint firstAttribute="trailing" secondItem="O5r-Fe-3uD" secondAttribute="trailing" id="qKe-Ua-M6u"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="263" id="75k-Hl-7eS"/>
+                        <constraint firstItem="t7u-i9-S6w" firstAttribute="top" secondItem="vfs-En-Wjo" secondAttribute="top" id="Flj-LO-tyM"/>
+                        <constraint firstItem="Pq0-o0-h3H" firstAttribute="top" secondItem="vfs-En-Wjo" secondAttribute="top" id="LZl-cl-QaP"/>
+                        <constraint firstAttribute="bottom" secondItem="t7u-i9-S6w" secondAttribute="bottom" id="R5p-gh-Yr3"/>
+                        <constraint firstItem="Pq0-o0-h3H" firstAttribute="centerX" secondItem="vfs-En-Wjo" secondAttribute="centerX" id="RFs-nQ-0Ga"/>
+                        <constraint firstAttribute="trailing" secondItem="t7u-i9-S6w" secondAttribute="trailing" id="fyL-e7-DZD"/>
+                        <constraint firstAttribute="bottom" secondItem="Pq0-o0-h3H" secondAttribute="bottom" id="lUq-qD-DLV"/>
+                        <constraint firstItem="Pq0-o0-h3H" firstAttribute="width" secondItem="vfs-En-Wjo" secondAttribute="width" id="uai-Sb-Xgh"/>
+                        <constraint firstItem="t7u-i9-S6w" firstAttribute="leading" secondItem="vfs-En-Wjo" secondAttribute="leading" id="x1S-o6-k3d"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vfs-En-Wjo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="ELF-IU-tWt"/>
+                <constraint firstItem="jRl-NW-HJO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="H0I-Pc-jzS"/>
+                <constraint firstAttribute="bottom" secondItem="jRl-NW-HJO" secondAttribute="bottom" id="Ox2-em-x1m"/>
+                <constraint firstItem="jRl-NW-HJO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YJy-ev-QiM"/>
+                <constraint firstAttribute="trailing" secondItem="jRl-NW-HJO" secondAttribute="trailing" id="biW-YY-J4p"/>
+                <constraint firstItem="vfs-En-Wjo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="eMQ-Uf-kPj"/>
+                <constraint firstAttribute="trailing" secondItem="vfs-En-Wjo" secondAttribute="trailing" constant="30" id="fMu-Uu-TK5"/>
+            </constraints>
+            <connections>
+                <outlet property="btnDelete" destination="hbl-EO-HgA" id="3He-av-mTr"/>
+                <outlet property="btnDelete1" destination="1sz-bG-Zu6" id="ZF6-zY-edq"/>
+                <outlet property="btnForward" destination="rXK-qj-iWx" id="GLO-lb-E6t"/>
+                <outlet property="btnMove" destination="ZFR-xI-rR0" id="EJF-IN-HkY"/>
+                <outlet property="btnPrint" destination="c7x-sY-zkR" id="6Fl-16-j8c"/>
+                <outlet property="btnPrint1" destination="zkC-NT-26c" id="8S4-by-elw"/>
+                <outlet property="btnReply" destination="bwK-7G-Tm9" id="Ijl-0s-MSL"/>
+                <outlet property="btnViewDetail" destination="5bk-Xx-rSC" id="BXJ-GX-Vwd"/>
+                <outlet property="containerView" destination="vfs-En-Wjo" id="cG0-BP-S7W"/>
+                <outlet property="height" destination="75k-Hl-7eS" id="Of1-UM-0Ma"/>
+                <outlet property="messageMoreView" destination="t7u-i9-S6w" id="KaN-BL-8bD"/>
+                <outlet property="threadMoreView" destination="Pq0-o0-h3H" id="fKC-I2-npw"/>
+                <outlet property="top" destination="eMQ-Uf-kPj" id="qg3-EE-1JJ"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

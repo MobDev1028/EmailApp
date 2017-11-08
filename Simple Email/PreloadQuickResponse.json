@@ -1,0 +1,57 @@
+[
+ 
+ {"quickResponseTitle": "Yes",
+ "quickResponseText": "Yes",
+ "quickResponseHtml": "<div>Yes</div>",
+ "quickResponseAttachmentAvailable": "0",
+ "quickResponseAttachmentPath": ""
+ },
+ 
+ { "quickResponseTitle": "NO",
+ "quickResponseText": "NO",
+ "quickResponseHtml": "<div>No</div>",
+ "quickResponseAttachmentAvailable": "0",
+ "quickResponseAttachmentPath": ""
+
+ },
+ { "quickResponseTitle": "Thanks",
+ "quickResponseText": "Thanks",
+ "quickResponseHtml": "<div>Thanks</div>",
+ "quickResponseAttachmentAvailable": "0",
+ "quickResponseAttachmentPath": ""
+ },
+ { "quickResponseTitle": "I will get back to you soon",
+ "quickResponseText": "I will get back to you soon",
+ "quickResponseHtml": "<div>I will get back to you soon</div>",
+ "quickResponseAttachmentAvailable": "0",
+ "quickResponseAttachmentPath": ""
+ }
+ ,
+ { "quickResponseTitle": "Got it, thanks",
+ "quickResponseText": "Got it, thanks",
+ "quickResponseHtml": "<div>Got it, thanks</div>",
+ "quickResponseAttachmentAvailable": "0",
+ "quickResponseAttachmentPath": ""
+ }
+ ,
+ { "quickResponseTitle": "No problem",
+ "quickResponseText": "No problem",
+ "quickResponseHtml": "<div>No problem</div>",
+ "quickResponseAttachmentAvailable": "0",
+ "quickResponseAttachmentPath": ""
+ }
+
+ ,
+ { "quickResponseTitle": "Please review",
+ "quickResponseText": "Please review",
+ "quickResponseHtml": "<div>Please review</div>",
+ "quickResponseAttachmentAvailable": "0",
+ "quickResponseAttachmentPath": ""
+ }
+ , { "quickResponseTitle": "Please find the attachment",
+ "quickResponseText": "Please find the attachment",
+ "quickResponseHtml": "<div>Please find the attachment</div>",
+ "quickResponseAttachmentAvailable": "0",
+ "quickResponseAttachmentPath": ""
+ }
+ ]

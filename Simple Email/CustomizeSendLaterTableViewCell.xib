@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIText-Regular.ttf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomizeSendLaterCell" rowHeight="95" id="KGk-i7-Jjw" customClass="CustomizeSendLaterTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="521" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="521" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYh-Vv-rlD" userLabel="CustomizeLabelView">
+                        <rect key="frame" x="0.0" y="0.0" width="521" height="94"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGq-rc-Qgz">
+                                <rect key="frame" x="347" y="47" width="159" height="0.0"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                                <color key="textColor" red="0.55294117649999996" green="0.55294117649999996" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11c-bl-xcM">
+                                <rect key="frame" x="14" y="36" width="318" height="22"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="11c-bl-xcM" firstAttribute="leading" secondItem="eYh-Vv-rlD" secondAttribute="leading" constant="14" id="2lK-RL-xbb"/>
+                            <constraint firstItem="wGq-rc-Qgz" firstAttribute="centerY" secondItem="eYh-Vv-rlD" secondAttribute="centerY" id="3N6-L6-5sX"/>
+                            <constraint firstItem="11c-bl-xcM" firstAttribute="centerY" secondItem="eYh-Vv-rlD" secondAttribute="centerY" id="4E1-5r-qt5"/>
+                            <constraint firstItem="wGq-rc-Qgz" firstAttribute="width" secondItem="11c-bl-xcM" secondAttribute="width" multiplier="0.5" id="AID-D5-EJm"/>
+                            <constraint firstItem="wGq-rc-Qgz" firstAttribute="leading" secondItem="11c-bl-xcM" secondAttribute="trailing" constant="15" id="WmV-yb-eXJ"/>
+                            <constraint firstAttribute="trailing" secondItem="wGq-rc-Qgz" secondAttribute="trailing" constant="15" id="uMy-sA-E24"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3C-kB-4XH" userLabel="AddMoreButtonView">
+                        <rect key="frame" x="0.0" y="0.0" width="521" height="94"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdM-v3-Z7a">
+                                <rect key="frame" x="14" y="36" width="106" height="22"/>
+                                <state key="normal" image="btn_add_more"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CdM-v3-Z7a" firstAttribute="centerY" secondItem="A3C-kB-4XH" secondAttribute="centerY" id="IXt-ww-qQW"/>
+                            <constraint firstItem="CdM-v3-Z7a" firstAttribute="leading" secondItem="A3C-kB-4XH" secondAttribute="leading" constant="14" id="IvK-dW-xj5"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="onA-eR-zlr">
+                        <rect key="frame" x="0.0" y="93" width="521" height="1"/>
+                        <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="eiW-wT-zFr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="A3C-kB-4XH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0HO-jA-oMj"/>
+                    <constraint firstAttribute="bottom" secondItem="eYh-Vv-rlD" secondAttribute="bottom" id="2Wd-KO-V5Q"/>
+                    <constraint firstAttribute="trailing" secondItem="A3C-kB-4XH" secondAttribute="trailing" id="NV1-gH-JHa"/>
+                    <constraint firstAttribute="trailing" secondItem="onA-eR-zlr" secondAttribute="trailing" id="Nmu-en-vnZ"/>
+                    <constraint firstItem="onA-eR-zlr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NsF-Km-B3Q"/>
+                    <constraint firstAttribute="bottom" secondItem="onA-eR-zlr" secondAttribute="bottom" id="QJn-le-dXG"/>
+                    <constraint firstItem="eYh-Vv-rlD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="SWb-VB-Nea"/>
+                    <constraint firstAttribute="trailing" secondItem="eYh-Vv-rlD" secondAttribute="trailing" id="Xeo-SL-o3I"/>
+                    <constraint firstItem="A3C-kB-4XH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gGa-ah-fpl"/>
+                    <constraint firstItem="eYh-Vv-rlD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qUP-GP-sae"/>
+                    <constraint firstAttribute="bottom" secondItem="A3C-kB-4XH" secondAttribute="bottom" id="u2r-bk-7Be"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnAddMore" destination="CdM-v3-Z7a" id="QHn-ur-xDn"/>
+                <outlet property="lblSendLater" destination="11c-bl-xcM" id="Z9P-Cw-nC8"/>
+                <outlet property="lblSendTime" destination="wGq-rc-Qgz" id="PLl-HV-il4"/>
+                <outlet property="viewAddMoreButton" destination="A3C-kB-4XH" id="y7A-Dh-in5"/>
+                <outlet property="viewSendLaterLabel" destination="eYh-Vv-rlD" id="20s-wV-28T"/>
+            </connections>
+            <point key="canvasLocation" x="467.5" y="310.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_add_more" width="106" height="17"/>
+    </resources>
+</document>

@@ -1,0 +1,114 @@
+[
+ {
+ "preferenceId":1,
+ "isPreferenceActive": true,
+ "snoozeDate": 0,
+ "snoozeHourCount": 1,
+ "snoozeMinuteCount": 0,
+ "timePeriod" :"",
+ "snoozeTitle": "Later Today",
+ "timeString": "+1 Hour",
+ "image":"snooze_clock_blue",
+ "isDefault":true
+ },
+ {
+  "preferenceId":2,
+ "isPreferenceActive": true,
+ "snoozeDate": 0,
+ "snoozeHourCount": 20,
+ "snoozeMinuteCount": 0,
+  "timePeriod" :"PM",
+ "snoozeTitle": "This Evening",
+  "timeString": "8:00 PM",
+   "image":"snooze_clock_green",
+ "isDefault":true
+ },
+ {
+  "preferenceId":3,
+ "isPreferenceActive": true,
+ "snoozeDate": 0,
+ "snoozeHourCount": 9,
+ "snoozeMinuteCount": 0,
+   "timePeriod" :"AM",
+ "snoozeTitle": "Tomorrow",
+  "timeString": "9:00 AM",
+  "image":"snooze_clock_blue",
+  "isDefault":true
+ },
+ {
+  "preferenceId":4,
+ "isPreferenceActive": true,
+ "snoozeDate": 0,
+ "snoozeHourCount": 20,
+ "snoozeMinuteCount": 0,
+    "timePeriod" :"PM",
+ "snoozeTitle": "Tomorrow Eve",
+ "timeString": "8:00 PM",
+    "image":"snooze_clock_red",
+ "isDefault":true
+ }
+ ,
+ {
+  "preferenceId":5,
+ "isPreferenceActive": true,
+ "snoozeDate": 0,
+ "snoozeHourCount": 8,
+ "snoozeMinuteCount": 0,
+    "timePeriod" :"AM",
+ "snoozeTitle": "Weekend",
+  "timeString": "Sun, 8:00 AM",
+   "image":"snooze_clock_green",
+  "isDefault":true
+ }
+ ,
+ {
+ "preferenceId":6,
+ "isPreferenceActive": true,
+ "snoozeDate": 0,
+ "snoozeHourCount": 9,
+ "snoozeMinuteCount": 0,
+    "timePeriod" :"AM",
+ "snoozeTitle": "Next Week",
+  "timeString": "Mon, 9:00 AM",
+   "image":"snooze_clock_orange",
+  "isDefault":true
+ }
+ ,
+ {
+  "preferenceId":7,
+ "isPreferenceActive": true,
+ "snoozeDate": 0,
+ "snoozeHourCount": 8,
+ "snoozeMinuteCount": 0,
+    "timePeriod" :"AM",
+ "snoozeTitle": "In a Month",
+  "timeString": "8:00 AM",
+   "image":"snooze_clock_purple",
+  "isDefault":true
+ },
+ {
+  "preferenceId":8,
+ "isPreferenceActive": true,
+  "snoozeDate": 0,
+ "snoozeHourCount": 0,
+ "snoozeMinuteCount": 1,
+ "snoozeTitle": "Someday",
+    "timePeriod" :"",
+  "timeString": "",
+ "image":"snooze_clock_green",
+  "isDefault":true
+ }
+,
+ {
+ "preferenceId":9,
+ "isPreferenceActive": true,
+ "snoozeDate": 0,
+ "snoozeHourCount": 0,
+ "snoozeMinuteCount": 1,
+    "timePeriod" :"AM",
+ "snoozeTitle": "Pick Date",
+   "image":"snooze_calender",
+  "timeString": "",
+ "isDefault":true
+ }
+ ]

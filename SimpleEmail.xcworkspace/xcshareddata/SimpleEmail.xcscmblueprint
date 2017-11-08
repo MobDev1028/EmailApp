@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BA5271CF56CA82B4A950E328234B4B25D5C628CF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "23BBB22AFF309CBF028E08AB916147E3606D35EB" : 0,
+    "BA5271CF56CA82B4A950E328234B4B25D5C628CF" : 9223372036854775807,
+    "0758868564A0FE807C15DE54DC32DD644370672A" : 9223372036854775807,
+    "7ACF23A507BCFA5964C32B48177971421D05CCCE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B3E762BB-BA79-4A76-97EA-6A2575A8A9D2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "23BBB22AFF309CBF028E08AB916147E3606D35EB" : "SimpleEmailLocal\/",
+    "BA5271CF56CA82B4A950E328234B4B25D5C628CF" : "simplemail\/",
+    "0758868564A0FE807C15DE54DC32DD644370672A" : "emailapp\/",
+    "7ACF23A507BCFA5964C32B48177971421D05CCCE" : "..\/CoreMailBuild\/mailcore2"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SimpleEmail",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SimpleEmail\/SimpleEmail.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/whoisxmlapi.git.cloudforge.com\/emailapp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0758868564A0FE807C15DE54DC32DD644370672A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/maxxsol\/simpleemaillocal.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "23BBB22AFF309CBF028E08AB916147E3606D35EB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MailCore\/mailcore2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7ACF23A507BCFA5964C32B48177971421D05CCCE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/SidorKalinin\/simplemail.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BA5271CF56CA82B4A950E328234B4B25D5C628CF"
+    }
+  ]
+}

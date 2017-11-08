@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SFUIText-Regular.ttf">
+            <string>SFUIText-Regular</string>
+        </mutableArray>
+        <mutableArray key="SFUIText-Semibold.ttf">
+            <string>SFUIText-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InboxSectionHeader" rowHeight="56" id="KGk-i7-Jjw" customClass="InboxHeaderTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PK9-k1-nAY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ld3-CV-H7d">
+                        <rect key="frame" x="13" y="19" width="41" height="18"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbB-ta-GEO">
+                        <rect key="frame" x="64" y="19" width="243" height="18"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                        <color key="textColor" red="0.55294117647058827" green="0.55294117647058827" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wed-Vd-3kF" userLabel="sep">
+                        <rect key="frame" x="0.0" y="54" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="4lU-tB-1tS"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5B-3s-hQV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dbB-ta-GEO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0bq-6L-w0l"/>
+                    <constraint firstItem="PK9-k1-nAY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7KD-8Q-0hH"/>
+                    <constraint firstAttribute="trailing" secondItem="n5B-3s-hQV" secondAttribute="trailing" id="Bmp-Ny-mw3"/>
+                    <constraint firstItem="wed-Vd-3kF" firstAttribute="top" secondItem="PK9-k1-nAY" secondAttribute="bottom" id="GjZ-hJ-1vE"/>
+                    <constraint firstItem="ld3-CV-H7d" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="Hwf-jn-9q5"/>
+                    <constraint firstItem="wed-Vd-3kF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="IeW-kQ-0vc"/>
+                    <constraint firstItem="PK9-k1-nAY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="JYU-pz-VtI"/>
+                    <constraint firstItem="n5B-3s-hQV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KMx-Ta-chg"/>
+                    <constraint firstItem="dbB-ta-GEO" firstAttribute="leading" secondItem="ld3-CV-H7d" secondAttribute="trailing" constant="10" id="LI5-EF-wqz"/>
+                    <constraint firstAttribute="trailing" secondItem="wed-Vd-3kF" secondAttribute="trailing" id="LTn-oy-N6B"/>
+                    <constraint firstItem="ld3-CV-H7d" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PeT-Bo-ga7"/>
+                    <constraint firstItem="dbB-ta-GEO" firstAttribute="width" secondItem="ld3-CV-H7d" secondAttribute="width" multiplier="1.75" id="VCc-wG-CUZ"/>
+                    <constraint firstItem="dbB-ta-GEO" firstAttribute="leading" secondItem="ld3-CV-H7d" secondAttribute="trailing" constant="10" id="eEl-5W-gh8"/>
+                    <constraint firstAttribute="bottom" secondItem="wed-Vd-3kF" secondAttribute="bottom" id="hxt-Ma-nGo"/>
+                    <constraint firstAttribute="bottom" secondItem="PK9-k1-nAY" secondAttribute="bottom" id="j1e-Ow-INR"/>
+                    <constraint firstItem="n5B-3s-hQV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rYd-eb-APv"/>
+                    <constraint firstItem="wed-Vd-3kF" firstAttribute="top" secondItem="n5B-3s-hQV" secondAttribute="bottom" id="vIw-a6-SxY"/>
+                    <constraint firstAttribute="trailing" secondItem="PK9-k1-nAY" secondAttribute="trailing" id="x54-at-hRB"/>
+                    <constraint firstAttribute="trailing" secondItem="dbB-ta-GEO" secondAttribute="trailing" constant="13" id="yv2-0N-l6X"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="j1e-Ow-INR"/>
+                        <exclude reference="VCc-wG-CUZ"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnHeader" destination="n5B-3s-hQV" id="M0v-oM-xzw"/>
+                <outlet property="lbHeaderlEmail" destination="dbB-ta-GEO" id="a6d-B4-zbc"/>
+                <outlet property="lbHeaderlTitle" destination="ld3-CV-H7d" id="gK2-cs-gm4"/>
+            </connections>
+            <point key="canvasLocation" x="407" y="377"/>
+        </tableViewCell>
+    </objects>
+</document>

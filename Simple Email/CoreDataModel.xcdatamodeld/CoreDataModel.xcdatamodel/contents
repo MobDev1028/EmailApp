@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G1217" minimumToolsVersion="Xcode 7.0" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Attachments" syncable="YES">
+        <attribute name="attachmentPaths" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="emailUniqueId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="Contacts" syncable="YES">
+        <attribute name="emailTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="senderName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Email" syncable="YES">
+        <attribute name="attachmentCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="bccAddresses" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="ccAddresses" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="cloneId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="emailBody" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="emailId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <attribute name="emailPreview" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailSubject" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailThreadId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="emailTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailUniqueId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="favoriteFirebaseId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fromAddress" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="hideEmail" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isArchive" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isAttachementAvailable" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isCompleteThreadFavorite" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isCompleteThreadSnoozed" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isConversation" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isDraft" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isDraftSavedOnServer" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isFakeDraft" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isInboxEmail" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isSentEmail" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isSnoozed" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isThreadTopEmail" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isTrashEmail" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mailFlags" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mailFolder" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageHtmlBody" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageInstance" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="senderId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="senderImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="senderName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="snoozedDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="snoozedFirebaseId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="snoozedMarkedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="snoozeIfNoReply" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="toAddresses" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="totalUnreadThreadCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unreadCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="updateData" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="thread" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Thread" inverseName="threadEmail" inverseEntity="Thread" syncable="YES"/>
+    </entity>
+    <entity name="EmailInfo" syncable="YES">
+        <attribute name="emailDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="emailId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="emailThreadId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="emailUniqueId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mailFolder" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="History" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isRecent" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="QuickResponse" syncable="YES">
+        <attribute name="firebaseId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quickResponseAttachmentAvailable" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="quickResponseAttachmentPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quickResponseHtml" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quickResponseId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="quickResponseText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quickResponseTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userEmail" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SearchEmail" syncable="YES">
+        <attribute name="attachmentCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="bccAddresses" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="ccAddresses" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="cloneId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="emailBody" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="emailId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="emailPreview" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailSubject" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailThreadId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="emailTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailUniqueId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="favoriteFirebaseId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fromAddress" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="hideEmail" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isArchive" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isAttachementAvailable" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isCompleteThreadFavorite" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isCompleteThreadSnoozed" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isConversation" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isDraft" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isDraftSavedOnServer" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isFakeDraft" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isInboxEmail" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isSentEmail" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isSnoozed" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isThreadTopEmail" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isTrashEmail" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mailFlags" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mailFolder" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageHtmlBody" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageInstance" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="senderId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="senderImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="senderName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="snoozedDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="snoozedFirebaseId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="snoozedMarkedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="snoozeIfNoReply" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="toAddresses" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="totalUnreadThreadCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unreadCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="updateData" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="SendLaterPreferences" syncable="YES">
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isPreferenceActive" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="preferenceId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sendDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sendHourCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sendLaterTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sendMinuteCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sendPreferenceFirebaseId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timePeriod" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="SnoozePreference" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isPreferenceActive" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="preferenceId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="snoozeDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="snoozeHourCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="snoozeMinuteCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="snoozePreferenceFirebaseId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="snoozeTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timePeriod" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="Thread" syncable="YES">
+        <attribute name="emailThreadId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="threadEmail" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Email" inverseName="thread" inverseEntity="Email" syncable="YES"/>
+    </entity>
+    <entity name="User" syncable="YES">
+        <attribute name="accountTitle" optional="YES" attributeType="String" defaultValueString="Work" syncable="YES"/>
+        <attribute name="expireDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="latestDraftEmailDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="latestEmailDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="latestSentEmailDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="latestTrashEmailDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="notificcationPreference" optional="YES" attributeType="Integer 16" defaultValueString="1" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="refreshToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userKeychainItemName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userOAuthAccessToken" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Attachments" positionX="-126" positionY="198" width="128" height="90"/>
+        <element name="Contacts" positionX="-135" positionY="189" width="128" height="90"/>
+        <element name="Email" positionX="-342" positionY="86" width="128" height="735"/>
+        <element name="EmailInfo" positionX="-135" positionY="189" width="128" height="135"/>
+        <element name="History" positionX="-108" positionY="216" width="128" height="90"/>
+        <element name="QuickResponse" positionX="-135" positionY="189" width="128" height="165"/>
+        <element name="SearchEmail" positionX="-135" positionY="189" width="128" height="720"/>
+        <element name="SendLaterPreferences" positionX="-135" positionY="189" width="128" height="225"/>
+        <element name="SnoozePreference" positionX="-135" positionY="189" width="128" height="240"/>
+        <element name="Thread" positionX="-38" positionY="711" width="128" height="88"/>
+        <element name="User" positionX="259" positionY="36" width="128" height="255"/>
+    </elements>
+</model>
